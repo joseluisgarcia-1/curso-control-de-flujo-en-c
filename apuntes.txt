@@ -1,0 +1,52 @@
+Bienvenida
+***Clase 1 Qué aprenderás sobre el control de flujo en C***
+
+
+Toma de decisiones
+***Clase 2 Estructuras de decisión***
+
+
+
+***Clase 3 Expresión if***
+
+
+
+***Clase 4 If anidados***
+
+
+
+***Clase 5 Expresión switch case***
+
+
+
+Control de Bucles en C
+***Clase 6 Bucle while***
+
+
+
+***Clase 7 Bucle do while***
+
+
+
+***Clase 8 Bucle for***
+
+
+
+Uso de las instrucciones break y continue
+***Clase 9 Expresión break***
+
+
+
+***Clase 10 Expresión continue***
+
+
+
+***Clase 11 Expresión goto***
+
+
+Cierre
+***Clase 12 Continúa practicando***
+
+
+
+***Clase 13 Cierre y conclusiones***
