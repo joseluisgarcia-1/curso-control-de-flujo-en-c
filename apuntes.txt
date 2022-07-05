@@ -5,11 +5,48 @@ Bienvenida
 Toma de decisiones
 ***Clase 2 Estructuras de decisión***
 
+- Statement: es cuando se declara una simple variable, ó cuando se imprime algo.
+    - Ejemplo:
+        printf("hola mundo");
+A esa sola línea que se encarga de imprimir algo se le conoce como Statement, o una línea de código en C
+El ; es el caracter que cierra o termina el Statement
+- En C no solo vamos a tener líneas individuales, también podemos tener grupos o bloques de Statement y/o declaraciones
+- Dejar claro que los Statement son una simple unidad de código o unidad básica de código
+- En un if, else if ó else no es de manera obligatoria colocar {} para cerrar el condicional
+- Se pueden colocar tantos else if como se quiera
+Ejemplo:
+    if (statement)
+        printf("Hola mundillo")
+    else if (statement2)
+        printf("Hola platzi")
+    else
+        printf("Hello chicos")
+Ejemplo 2:
+    if (statement){
+        printf("Hola mundillo")
+        }
+    else if (statement2){
+        printf("Hola platzi")
+        }
+    else{
+        printf("Hello chicos")
+        }
 
 
 ***Clase 3 Expresión if***
 
+    - &&: y
+        - Cuando las dos condiciones son verdaderas
+    - ||: o
+        - Cuando algunas de las dos condiciones es verdadera
 
+Operadores lógicos en explicados de manera sencilla
+
+- Con AND (&&) si una de las dos expresiones es falsa entonces toda la expresión será falsa.
+- Con OR (||) si una de las dos expresiones es verdadera entonces toda la expresión será verdadera.
+- Con NOT (!) si la expresión es falsa entonces toda la expresión viene a ser verdadera, 
+    pero si la expresión es verdadera entonces toda la expresión viene a ser falsa.
+Entiéndase que el valor de toda una expresión viene a ser 0 si es falsa y 1 si es verdadera.
 
 ***Clase 4 If anidados***
 
@@ -17,16 +54,34 @@ Toma de decisiones
 
 ***Clase 5 Expresión switch case***
 
-
+- Es una Estructura múltiple que nos sirve para tener varios casos de decisiones
+- Break, indica que se cumplió el código hasta donde esté y lo finaliza
+- Tenemos a default y lo podemos ver como el else, si ninguno de los casos se cumple entonces vamos al default
+- la expresión a validar simple y sencillamente va a ser una variable
 
 Control de Bucles en C
 ***Clase 6 Bucle while***
 
-
+- Evalúa una expresión y evalua la expresión siempre y cuando la expresión sea True entonces el bucle se va a repetir
+cuando la expresión sea 0 o False el bucle se sale
+- El while lo controla uno mismo, entonces dentro del while debemos asegurarnos de cuál es la instrucción que va cambiar para que 
+nuestro while se salga
 
 ***Clase 7 Bucle do while***
 
+- Los while los usamos como ejecución condicional en el código, es decir, debemos poner una condición y si se cumple vamos a ejecutarlo
+    - Por ejemplo mientras se está buscando un objetivo, y si se encuentra algo o el objetivo el while se deja de cumplir se sale de ahí
+        y comienza l a rutina de persecución del objetivo
+    - en el while si la condición no se cumple desde el principio no se ejecuta nunca, en el do while
+        si se cumple al menos una vez
+- El for lo usamos cuando sepamos cuál es la cantidad de elementos que vamos a recorrer o iterar
+- Do while: Haz mientras
+- En el while tradicional si la condición no se cumple desde el principio no se ejecuta nunca
+    en el do while lo hacemos al menos una vez
+    - Las rutinas de inicialización son una buena práctica
 
+While = Pregunta luego dispara (si es necesario)
+Do While = Te pega al menos un tiro, y luego si te pregunta
 
 ***Clase 8 Bucle for***
 
@@ -35,18 +90,62 @@ Control de Bucles en C
 Uso de las instrucciones break y continue
 ***Clase 9 Expresión break***
 
-
+- Con el break se rompe un pedazo de código
+- Nos sirve para romper los bucles o ciclos donde nos encontremos, y simple y 
+sencillamente se va salir un nivel atrás de donde uno se encuentre
+- Este se usa en while, do while, for, switch
 
 ***Clase 10 Expresión continue***
 
+- Es el opuesto de break, simplemente forza a que se ejecute la próxima iteración del bucle, entonces
+    en lugar de que se salga del bucle con el continue se forza una iteración más 
+- Este se usa en while, do while, for, pero no se puede usar en switch
+- En el ejemplo del archivo clase10_continue.c no nos imprime nada luego de colocar el continue porque él
+    está buscando forzar la ejecución de otro bucle
+    - En el ejemplo cuando coloco el printf fuera del for si me imprime los datos pero no me imprime número por número si no que
+        coloca el número final del bucle porque el contiune forza a ir,ir,ir ejecutando el bucle
 
+- Es muy raro usar continue, según la experiencia del instructor del curso
 
 ***Clase 11 Expresión goto***
 
+- es una instrucción altamente abusable, se puede caer en malas prácticas porque esto permite ir a cualquier parte del código
+    sin importar donde uno esté, pero eso no es bueno
+- es mejor usar más if
+- Es muy raro usar goto, según la experiencia del instructor del curso
 
 Cierre
 ***Clase 12 Continúa practicando***
 
+Está comprobado que practicar es una de las formas en que podemos reforzar lo aprendido, por este motivo, encontrarás en nuestro blog distintos ejercicios para que nunca pares de programar.
 
+Recuerda estar atento porque periódicamente encontrarás nuevos ejercicios y cuéntanos en los comentarios que te han parecido.
+
+https://platzi.com/blog/
+
+Ejercicios para practicar
+Primer nivel: salida de mensajes
+
+https://platzi.com/comunidad/retos-de-programacion-en-cualquier-lenguaje-primer-nivel-salida-de-mensajes/
+
+Segundo nivel: condicionales
+
+https://platzi.com/comunidad/retos-de-programacion-para-cualquier-lenguaje-segundo-nivel-condicionales/
+
+Tercer nivel: manejo de strings
+
+https://platzi.com/comunidad/retos-de-programacion-para-cualquier-lenguaje-tercer-nivel-strings/
+
+Cuarto nivel: matemáticas
+
+https://platzi.com/comunidad/retos-de-programacion-en-cualquier-lenguaje-cuarto-nivel-matematicas/
+
+Quinto nivel: ciclo ‘for’
+
+https://platzi.com/comunidad/retos-de-programacion-en-cualquier-lenguaje-quinto-nivel-ciclo-for/
+
+Sexto nivel: ciclo ‘while’
+
+https://platzi.com/comunidad/retos-de-programacion-en-cualquier-lenguaje-sexto-nivel-ciclo-while-2/
 
 ***Clase 13 Cierre y conclusiones***
